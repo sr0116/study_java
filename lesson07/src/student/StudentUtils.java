@@ -12,5 +12,6 @@ public class StudentUtils {
 	
 	static int nextInt(String msg) {
 		return Integer.parseInt(nextLine(msg));
+		
 	}
 }

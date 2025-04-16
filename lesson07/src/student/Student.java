@@ -42,4 +42,11 @@ public class Student {
 		 return kor+eng+mat;
 	 }
     
+	 double total2() {
+		 return ((kor+eng+mat)/3);
+	
+	
+
+		
+	 }
 }
