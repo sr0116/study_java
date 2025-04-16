@@ -1,4 +1,4 @@
-package Student;
+package student;
 
 public class StudentMain {
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class StudentMain {
 		
 		for(;;) {
 			switch (StudentUtils.nextInt("1.등록 2. 조회 3.수정 4.삭제 5.종료")) {
-			case 1:
+			case 1 :
 				service.register();
 				
 				break;
@@ -17,6 +17,7 @@ public class StudentMain {
 				service.read();
 				
 				break;
+				
 			case 3:
 				service.modify();
 				
@@ -30,13 +31,12 @@ public class StudentMain {
 				return;
 				default:
 					break;
-					
+						
 			}
 		}
 	}
 }
 	
-		
 		
 		
 		
