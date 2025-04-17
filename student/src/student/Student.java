@@ -42,8 +42,8 @@ public class Student {
 		 return kor+eng+mat;
 	 }
     
-	 double total2() {
-		 return ((kor+eng+mat)/3);
+	 double avg() {
+		 return (total()/ 3d );
 	
 	
 

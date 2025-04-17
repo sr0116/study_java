@@ -6,6 +6,7 @@ public class CircleMain {
 		System.out.println(circle.area());// 넓이
 		System.out.println(circle.circum());// 둘레
 				
+		
 	}
 
 }

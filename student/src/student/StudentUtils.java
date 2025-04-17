@@ -8,6 +8,7 @@ public class StudentUtils {
 	static String nextLine(String msg) {
 		System.out.print(msg);
 		return scanner.nextLine();
+		
 	}
 	
 	static int nextInt(String msg) {
