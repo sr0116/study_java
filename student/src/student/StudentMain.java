@@ -27,6 +27,14 @@ public class StudentMain {
 				
 				break;
 			case 5:
+				service.allAvg();
+				
+				break;
+			case 6:
+				service.readOver();
+				
+				break;
+			case 7:
 				System.out.println(" bye~!");
 				return;
 				default:

@@ -4,13 +4,12 @@ package student;
 
 
 public class Student {
-	//1. StudentMain의 나머지 기능 구현(메세지 출현)
-	//2. Student의 생성자 구현
-	// 기본생성자 + (학번, 이름), (다섯개의 필드를 다 사용)
-	
-	
-	// 학생 1인의 총점, 평균을 계산한다면
-	//어떻게 처리할 것인지
+	//0418 과제 1. 모든 필드 .메서드 생성자 > 접근제한자
+	// 2. 어떤 값을 입력하더라도 예외 처리(프로그램 종료는 정상 종료)
+	//3. 점수값 입력의 범위 0~100 사이만 인정
+	//4. 이름 입력은 한글만 인정, 2글자~4글자 사이 -예외 조건문 다 상관없
+	//5. 임시데이터의 점수값을 랜덤으로 배정해서 시작(60~100)
+	//6. circle 관련 예제 레슨 8챕터 도형의 연습 , 다향성
 	
 	
 	Student(){} // 1번 기본 생성자먼저 작성
@@ -44,9 +43,9 @@ public class Student {
     
 	 double avg() {
 		 return (total()/ 3d );
-	
-	
-
-		
+	 }
+	 
+	 public String toString () {
+		 return String.format("%d %s %d %d %d %f %d",no, name,kor,eng,mat);
 	 }
 }
