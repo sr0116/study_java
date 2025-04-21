@@ -1,6 +1,4 @@
-package lesson08;
-
-import lesson08.shape.Shape;
+package lesson08.shape;
 
 public class Rect extends Shape{
 	int x, y;
