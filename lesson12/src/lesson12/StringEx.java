@@ -35,6 +35,7 @@ public class StringEx {
 	//파일명이 abcd인 파일만 출력
 	
 	//배열 탐색
+	System.out.println("========");
 	
 		for(int i = 0; i<fileNames.length;i++) {
 			System.out.println(fileNames[i]);
@@ -47,7 +48,7 @@ public class StringEx {
 			for(int j = 0; j<fileNames.length;j++) {
 				System.out.println(fileNames[j]);
 				
-				if(fileNames[j].startsWith("abㄴcd")) {
+				if(fileNames[j].startsWith("abcd")) {
 					System.out.println(fileNames[j]);
 				}	
 			}		
@@ -58,24 +59,24 @@ public class StringEx {
 			System.out.println("===============");
 			// lesson으로 시작하지 않는 이름만 출력
 			
-			String[] list = dir.list();
-			for(String s : list) { 
-				if(!s.startsWith("lesson")) {
-					System.out.println(s);				
-			}
-		}		
-			System.out.println("===============");
-			//문자열> 문자열 배열
-			
-			String [] strs = str.split("c");//c 를 구분자로 해서 분리시키는.. 여러개 사용 가능
-			System.out.println(Arrays.toString(strs));
-			// 문자열 배열 > 문자열
-			String str3= String.join("+", strs);
-			System.out.println(str3);//사용처가 많음
-			//문자열 > 문자 배열
-			char[] chs = str.toCharArray();
-			for(int i = 0; i< chs.length; i++) {
-//				System.out.println(chs[i]);
+//			String[] list = dir.list();
+//			for(String s : list) { 
+//				if(!s.startsWith("lesson")) {
+//					System.out.println(s);				
+//			}
+//		}		
+//			System.out.println("===============");
+//			//문자열> 문자열 배열
+//			
+//			String [] strs = str.split("c");//c 를 구분자로 해서 분리시키는.. 여러개 사용 가능
+//			System.out.println(Arrays.toString(strs));
+//			// 문자열 배열 > 문자열
+//			String str3= String.join("+", strs);
+//			System.out.println(str3);//사용처가 많음
+//			//문자열 > 문자 배열
+		char[] chs = str.toCharArray();
+		for(int i = 0; i< chs.length; i++) {
+				System.out.println(chs[i]);
 			}
 			// 문자 배열 > 문자열
 			String str2 = new String(chs);
